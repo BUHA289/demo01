@@ -1,14 +1,17 @@
 ### 회원가입.1
 
-![image](https://github.com/user-attachments/assets/548433d1-161c-4232-a5df-fdeeccd82fb4)
+![image](https://github.com/user-attachments/assets/5156121a-0e44-41e7-9d27-9f311be94191)
+
 
 
 ### 로그인 2
 
-![image](https://github.com/user-attachments/assets/368c14c4-c7b6-4a12-8297-fb9cf236e95f)
+![image](https://github.com/user-attachments/assets/0a49fb05-8b05-4837-836a-c7f1c7dd6293)
+
 
 
 ### 일정저장 3
 
-![image](https://github.com/user-attachments/assets/6acca8c0-df38-4d00-9e45-a71fcc3a2f50)
+![image](https://github.com/user-attachments/assets/b99cbb8a-f4c8-432c-a617-27cf0cabad07)
+
 
