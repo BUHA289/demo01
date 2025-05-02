@@ -16,10 +16,8 @@ public class AuthService {
 
     @Transactional
     public void signup(AuthSignupRequestDto dto) {
-
             Member member = new Member(dto.getEmail());
             memberRepository.save(member);
-
         }
 
     @Transactional
@@ -28,7 +26,6 @@ public class AuthService {
                 () -> new IllegalStateException("그런 멤버 없음 ㅎㅎ ")
         );// 없기떄문에 우리가 만들어야함
         return new AuthLoginResponseDto(member.getId());
-
     }
 }
 

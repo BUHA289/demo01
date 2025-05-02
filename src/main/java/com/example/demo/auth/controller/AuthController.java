@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 public class AuthController {
-
     private final AuthService authService;
 
     @PostMapping("/signup")
@@ -40,5 +39,4 @@ public class AuthController {
             session.invalidate();
         }
     }
-
 }

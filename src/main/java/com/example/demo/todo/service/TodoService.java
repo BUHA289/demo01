@@ -23,11 +23,9 @@ public class TodoService {
 
     @Transactional
     public TodoSaveResponseDto save(Long memberId, TodoSaveRequestDto dto) {
-
         Member member = memberRepository.findById(memberId).orElseThrow(
                 () -> new IllegalStateException("그런 멤버 없슴")
         );
-
         Todo todo = new Todo(
                 dto.getContent(),
                 member
@@ -68,15 +66,12 @@ public class TodoService {
         Member member = memberRepository.findById(memberId).orElseThrow(
                 () -> new IllegalStateException("그런 멤버 없음")
         );
-
         Todo todo = todoRepository.findById(todoId).orElseThrow(
                 () -> new IllegalStateException("그런 사람 없음")
         );
-
         if (!todo.getMember().getId().equals(member.getId())) {
             throw new IllegalStateException("누구임? 투두작성자 해킹임?");
         }
-
         todo.update(dto.getContent());
         return new TodoUpdateResponseDto(todo.getId(),
                 todo.getContent());
@@ -95,7 +90,6 @@ public class TodoService {
         if (!todo.getMember().getId().equals(member.getId())) {
             throw new IllegalStateException("누구임? 투두작성자 해킹임?");
         }
-
          todoRepository.deleteById(todoId);
     }
 }

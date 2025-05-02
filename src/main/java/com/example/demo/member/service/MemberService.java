@@ -15,16 +15,10 @@ import java.util.List;
 public class MemberService {
     private final MemberRepository memberRepository;
 
-
-
-
     @Transactional(readOnly = true)
     public List<MemberResponseDto> findAll() {
         List<Member> members = memberRepository.findAll();
-
-
         return members.stream().map(member -> new MemberResponseDto(member.getId(), member.getEmail())).toList();
-
     }
 
     @Transactional(readOnly = true)
@@ -45,9 +39,7 @@ public class MemberService {
 
     @Transactional
     public void deleteById(Long memberId) {
-
         memberRepository.deleteById(memberId);
-
     }
 }
 

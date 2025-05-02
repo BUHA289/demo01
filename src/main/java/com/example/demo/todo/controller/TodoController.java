@@ -12,9 +12,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 public class TodoController {
-
     private final TodoService todoService;
-
 
     @PostMapping("/todos")
     public ResponseEntity<TodoSaveResponseDto> save(
@@ -51,5 +49,4 @@ public class TodoController {
     ) {
         todoService.delete(memberId, todoId);
     }
-
 }

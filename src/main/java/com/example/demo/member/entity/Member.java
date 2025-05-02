@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 public class Member {
-
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String email;
@@ -19,7 +18,6 @@ public class Member {
     public Member(String email) {
         this.email = email;
     }
-
 
     public void update(String email) {
         this.email = email;
